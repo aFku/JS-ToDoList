@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+        <script type="module" src="scripts/manageJSON.js" defer></script>
+        <script type="module" src="scripts/ToDoElement.js" defer></script>
+        <script type="module" src="scripts/manageElements.js" defer></script>
+        <script type="module" src="scripts/manageHTML.js" defer></script>
+        <script type="module" src="scripts/main.js"></script>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <main class="container-fluid">
+            <div class="container">
+                <div class="row d-flex justify-content-between">
+                    <div class="col-lg-6 element-list mt-3 ">
+
+                    </div>
+                    <div class="col-lg-1 d-flex justify-content-center">
+                        <div class="vertical-line">
+                        </div>
+                    </div>
+                    <div class="col-lg-5 form-section mt-3">
+                            <div class="row d-flex justify-content-center">
+                                <h2>
+                                    Add new note
+                                </h2>
+                            </div>
+                            <div class="row d-flex justify-content-center mt-5">
+                                <div class="col-lg-3 add-label">
+                                    Title:
+                                </div>
+                                <div class="col-lg-3">
+                                    <input type="text" id="add-title">
+                                </div>
+                            </div>
+                            <div class="row d-flex justify-content-center mt-3">
+                                <div class="col-lg-3 add-label">
+                                    Content:
+                                </div>
+                                <div class="col-lg-3">
+                                    <input type="text" id="add-content">
+                                </div>
+                            </div>
+                            <div class="row d-flex justify-content-center mt-3">
+                                <div class="col-lg-3 add-label">
+                                    Deadline:
+                                </div>
+                                <div class="col-lg-3">
+                                    <input type="date" id="add-deadline">
+                                </div>
+                            </div>
+                            <div class="row d-flex justify-content-center mt-4">
+                                <button class="btn btn-warning" id="add-button">Save</button>
+                            </div>
+                            <div class="row d-flex justify-content-center my-5">
+                                <div class="col-lg-12">
+                                    <div class="horizontal-line"></div>
+                                </div>
+                            </div>
+                            <div class="row json-section d-flex justify-content-center">
+                                <div class="col-lg-12">
+                                    <div class="row d-flex justify-content-center mb-3">
+                                        <h5> Load your To Do List from JSON! </h5>
+                                    </div>
+                                    <div class="row d-flex justify-content-center mb-3">
+                                        <input type="file" id="json-selector" accept=".json">
+                                    </div>
+                                    <div class="row d-flex justify-content-center mb-5">
+                                        <button class="btn btn-primary" id="json-load-button">Load!</button>
+                                    </div>
+                                    <div class="row d-flex justify-content-center mb-2">
+                                        <h5> Or save your current list! </h5>
+                                    </div>
+                                    <div class="row d-flex justify-content-center mb-2">
+                                        <button class="btn btn-primary" id="json-save-button">Download!</button>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
